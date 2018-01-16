@@ -151,15 +151,19 @@ contract ReanimatorCoin is StandardToken, Ownable {
   string public name = "Reanimator Coin";
   string public symbol = "RNM";
   // Кол-во нулей после запятой от одного токена
+  // Number of digits after point
   uint8 public decimals = 18;
   
+  // 10 000 000 coins are issuing
   // Выпускаем 10 000 000 монет
   uint256 public constant INITIAL_SUPPLY = 10000000 * (10 ** uint256(decimals));
   
   function ReanimatorCoin() {
   	// Записываем в totalSupply кол-во выпущенных токенов
+    // Write into totalSupply count of issuing tokens
     totalSupply = INITIAL_SUPPLY;
     // Отправляем на баланс владельца все токены
+    // send all tokens to owner of the contract
     balances[msg.sender] = INITIAL_SUPPLY;
   }
 
