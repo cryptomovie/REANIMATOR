@@ -1,2 +1,2 @@
 # REANIMATOR
-reanimator.io Ethereum ICO contract bsaed on ERC20 Token
+reanimator.io Ethereum ICO contract based on ERC20 Token
